@@ -105,7 +105,7 @@ main {
   background-color: #ffffff;
   padding: 30px;
   flex: 1;
-}  
+}
 
 /* Intro and skills styles */
 .intro {
@@ -142,105 +142,210 @@ main {
 .skills__header {
   color: var(--secondary-text-color);
   text-align: center;
-  margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 12px;
+  font-weight: 600;
 }
 
 .skills__text {
   color: var(--secondary-text-color);
-  text-align: justify;
+  text-align: left;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+.skills__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.skills__item {
+  background-color: #f0f0f0;
+  color: var(--primary-text-color);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  transition: background-color 0.2s ease;
+}
+
+.skills__item:hover {
+  background-color: #e0e0e0;
 }
 
 /* Experience and additional info styles */
 .experiences {
   flex: 1 1 60%;
-  margin-right: 50px;
+  margin-right: 40px;
+  text-align: center;
 }
 
 .experiences__header {
   color: var(--secondary-text-color);
-  text-align: left;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
   margin-bottom: 20px;
+}
+
+.experiences__company {
+  margin-bottom: 30px;
 }
 
 .experiences__company-header-durability {
   color: var(--durability-text-color);
-  text-align: left;
-  margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .experiences__company-header-name {
   color: var(--primary-text-color);
-  text-decoration-color: var(--text-decoration-color);
-  text-decoration-line: underline;
-  text-align: left;
-  margin-bottom: 20px;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .experiences__company-project {
   margin-left: 15px;
-  margin-bottom: 25px;
 }
 
 .experiences__company-project-role {
   color: var(--durability-text-color);
-  text-align: left;
-  margin-bottom: 10px;
-  font-size: 15px;
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 8px;
+  display: block;
 }
 
 .experiences__company-project-name {
   color: var(--primary-text-color);
-  text-align: left;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
 .experiences__company-project-responsibilities {
   color: var(--secondary-text-color);
+  list-style-type: none;
   padding-left: 20px;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
+/* Additional info*/
 .additional-info {
   flex: 1 1 40%;
 }
 
-.additional-info__education {
-  margin-bottom: 20px;
+.additional-info__education,
+.additional-info__languages {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
 }
 
-.additional-info__education-header {
+.additional-info__education-header,
+.additional-info__languages-header {
   color: var(--secondary-text-color);
-  text-align: left;
-  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .additional-info__education-university-durability {
-  color: var(--durability-text-color);
-  text-align: left;
-  margin-bottom: 10px;
-  font-size: 15px;
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .additional-info__education-university-speciality {
   color: var(--primary-text-color);
-  text-align: left;
-  margin-bottom: 10px;
+  font-size: 15px;
+  margin-bottom: 6px;
+  font-weight: 500;
 }
 
 .additional-info__education-university-name {
-  color: var(--secondary-text-color);
+  color: #ccc;
+  font-size: 14px;
 }
 
-.additional-info__languages {
-  margin-bottom: 20px;
-}
-
-.additional-info__languages-header {
-  color: var(--secondary-text-color);
-  text-align: left;
-  margin-bottom: 20px;
+.additional-info__languages-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
 }
 
 .additional-info__languages-item {
+  color: var(--secondary-text-color);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.additional-info__languages-language {
+  font-weight: 500;
+}
+
+.additional-info__languages-level {
+  font-style: italic;
+  color: #ccc;
+}
+
+.internship {
+  margin-top: 30px;
+}
+
+.internship__header {
+  color: var(--secondary-text-color);
+  font-size: 20px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.internship__company {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.internship__company-name {
+  font-weight: 600;
+  color: var(--primary-text-color);
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.internship__company-location,
+.internship__company-duration {
+  font-size: 16px;
+  color: var(--durability-text-color);
+}
+
+.internship__role {
+  font-style: italic;
+  margin-bottom: 10px;
+  display: inline-block;
+  color: var(--primary-text-color);
+}
+
+.internship__description {
+  font-size: 16px;
+  color: var(--secondary-text-color);
+  list-style-type: none;
+  line-height: 1.6;
+  padding-left: 20px;
+}
+
+.internship__technologies {
+  font-size: 16px;
+  margin-top: 10px;
   color: var(--secondary-text-color);
 }
